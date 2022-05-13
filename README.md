@@ -57,11 +57,38 @@ The machine failure consists of **_five_** independent failure modes:
 # Insights and Results: 
 
 
+This heatmap highlights the following:
+>1.  HDF, OSF and PWF independent failures (scores .58, .53, .52, respectively) are strongly correlated with Machine Failure.
+>2.  Rotational Temperature and Air Temperature have a strong postive correlation with .88 scores
+>3.  Rotational Speed and Torque have a strong negative correlation with a -.88 score
+
+![systemRx_heatmap](https://user-images.githubusercontent.com/100389581/168302971-ec15d067-80a6-4e21-83e6-64c0a7a4145c.png)
+
+
+This barplot shows Type independent failure totals (by percent) and clearly graphs the TOP 3 categories:
+>1. HDF which precede ~33% of machine failures (1)
+>2. OSF which precede ~28% of machine failures
+>3. PWF which precede ~26% of machine failures
+
+![systemRx_TypeMF](https://user-images.githubusercontent.com/100389581/168302674-5a3aa8a7-b4cd-463b-9840-2967474d483a.png)
+
+
+This scatterplot shows the highest operational occurrence for heat dissipation failure (HDF) that lead to machine failures:
+
+![systemRx_HDF](https://user-images.githubusercontent.com/100389581/168303099-b6e8c580-30e3-4572-8d20-7ef5fc76bcf0.png)
+
+
+
+
 
 ---
 # Summary:
 
-This XGB Classification Report indicates 100% precision and an average of 99% recall which translates to 0 false positives and a very low number of false negatives (2.8%) for this model. Accuracy is 100%, as expected, since the data is unbalanced in favor or 'NO Machine Failures'.
+Overall, the XGBClassifier model performed quite well as evidenced by its classification report heatmap below which indicates 100% precision and an average of 99% recall.  Translatiion: 0 false positives and a very low number of false negatives (2.8%) for this model. Accuracy is 100%, as expected, since the data is unbalanced and in favor of 'NO Machine Failures'.
+
+
+![systemRx_XGBpreds](https://user-images.githubusercontent.com/100389581/168302538-133c5189-e9e1-4a67-b928-41b7aa0a035f.png)
+
 
 I also explored using the RandomForestClassifier model to see if the classification report metrics would be different, but they were surprisingly similar, if not the same with minor tuning of the hyperparameters.
 
