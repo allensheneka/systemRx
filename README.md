@@ -41,9 +41,9 @@ The dataset consists of 10,000 data points stored as rows with **_14 features_**
 
 The machine failure consists of **_five_** independent failure modes:
 
-**Tool Wear Failure (TWF):** the tool will be replaced if fail at a randomly selected tool wear time between 200 and 240 mins (120 times in this dataset). At this point in time, the tool is replaced 69 times, and fails 51 times (randomly assigned).
+**Tool Wear Failure (TWF):** the tool will be replaced if fail at a randomly selected tool wear time between 165 and 250 mins (46 times in this dataset). At this point in time, it is not particularly clear from this dataset how often the tool is replaced prior to its failure.
 
-**Heat Dissipation Failure (HDF):** heat dissipation causes a process failure, if the difference between air- and process temperature is below 8.6 K and the tool's rotational speed is below 1380 rpm. This is the case for 115 data points.
+**Heat Dissipation Failure (HDF):** heat dissipation causes a process failure, if the difference between air- and process temperature is between 309.5 - 312 K and the tool's rotational speed is between 1250 - 1395 rpm. This is the case for 115 data points.
 
 **Power Failure (PWF):** the product of torque and rotational speed (in rad/s) equals the power required for the process. If this power is below ~3612 W (Watts) or above ~7853 W, the process fails, which is the case 95 times in our dataset.
 
