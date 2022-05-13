@@ -59,17 +59,11 @@ The machine failure consists of **_five_** independent failure modes:
 
 
 ---
-# Recommendations:
+# Summary:
 
-1. Which model performed the best? Random Forest Classifier
+This XGB Classification Report indicates 100% precision and an average of 99% recall which translates to 0 false positives and a very low number of false negatives (2.8%) for this model. Accuracy is 100%, as expected, since the data is unbalanced in favor or 'NO Machine Failures'.
 
-2. Which hyperparameters did you tune for the models?
->For Logistic Regression
-
->For RF, I tuned max_depth=2 which reduced variance and bias.
-
-3. Is there a model that you liked the best and why? I liked RF better because it's slightly easier to tune, especially to reduce overfitting
-
+I also explored using the RandomForestClassifier model to see if the classification report metrics would be different, but they were surprisingly similar, if not the same with minor tuning of the hyperparameters.
 
 # For further information:
 For any additional questions, please contact: https://www.linkedin.com/in/shenekaallen/
