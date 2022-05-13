@@ -14,7 +14,7 @@ Author: Sheneka Allen
 >Since real predictive maintenance datasets are generally difficult to obtain and especially publish, 
 >this synthetic dataset reflects real predictive maintenance encountered in industry to the best of my knowledge.
 
->Original Data Source: Source of data: https://archive.ics.uci.edu/ml/datasets/AI4I+2020+Predictive+Maintenance+Dataset#
+>Original Data Source: https://archive.ics.uci.edu/ml/datasets/AI4I+2020+Predictive+Maintenance+Dataset#
 
 >Credits: Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. 
 >Irvine, CA: University of California, School of Information and Computer Science.
