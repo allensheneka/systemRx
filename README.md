@@ -92,5 +92,7 @@ Overall, the XGBClassifier model performed quite well as evidenced by its classi
 
 I also explored using the RandomForestClassifier model to see if the classification report metrics would be different, but they were surprisingly similar, if not the same with minor tuning of the hyperparameters.
 
+**It is important to emphasize that this dataset does NOT distinguish between a machine failure resulting from 1) component replacement performed during preventive maintenance activities and 2) component run-time failure/fatigue.  This sort of machine failure analysis must be evaluated outside of this statistical model.**
+
 # For further information:
 For any additional questions, please contact: https://www.linkedin.com/in/shenekaallen/
