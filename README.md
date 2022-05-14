@@ -7,10 +7,10 @@ Author: Sheneka Allen
 ---
 
 
-# Business problem:
+## Business problem:
 >This model will use a maintenance dataset to estimate the percent likelihood of Machine Failure (target).
 
-# Data:
+## Data:
 >Since real predictive maintenance datasets are generally difficult to obtain and especially publish, 
 >this synthetic dataset reflects real predictive maintenance encountered in industry to the best of my knowledge.
 
@@ -19,7 +19,7 @@ Author: Sheneka Allen
 >Credits: Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. 
 >Irvine, CA: University of California, School of Information and Computer Science.
 
-# Attribute Info:
+## Attribute Info:
 
 The dataset consists of 10,000 data points stored as rows with **_14 features_** in columns--
 
@@ -54,7 +54,7 @@ The machine failure consists of **_five_** independent failure modes:
 ---
 
 
-# Insights and Results: 
+## Insights and Results: 
 
 
 This heatmap highlights the following:
@@ -82,7 +82,7 @@ This scatterplot shows the highest operational occurrence for heat dissipation f
 
 
 ---
-# Summary:
+## Summary:
 
 Overall, the XGBClassifier model performed quite well as evidenced by its classification report heatmap below which indicates 100% precision and an average of 99% recall.  Translatiion: 0 false positives and a very low number of false negatives (2.8%) for this model. Accuracy is 100%, as expected, since the data is unbalanced and in favor of 'NO Machine Failures'.
 
@@ -94,5 +94,5 @@ I also explored using the RandomForestClassifier model to see if the classificat
 
 **It is important to emphasize that this dataset does NOT distinguish between a machine failure resulting from 1) component replacement performed during preventive maintenance activities and 2) component run-time failure/fatigue.  This sort of machine failure analysis must be evaluated outside of this statistical model.**
 
-# For further information:
+## For further information:
 For any additional questions, please contact: https://www.linkedin.com/in/shenekaallen/
