@@ -84,7 +84,7 @@ This scatterplot shows the highest operational occurrence for heat dissipation f
 ---
 ## Summary:
 
-Overall, the XGBClassifier model performed decently as evidenced by its classification report heatmap below which indicates 80% precision and an average of 65% recall.  Translation: basically 0 (.049%) false positives and 35% false negatives for this model. Accuracy is 99%, very high and expected, since the data is unbalanced and in favor of 'NO Machine Failures'.
+To maintain the integrity of the training and test model predictions, the five independent failure modes were dropped from the dataset during the train-test split.  This ensured one target, machine failure, was the focus of this analysis.  Overall, the XGBClassifier model performed decently as evidenced by its classification report heatmap below which indicates 80% precision and an average of 65% recall.  Translation: basically 0 (.049%) false positives and 35% false negatives for this model. Accuracy is 99%, very high and expected, since the data is unbalanced and in favor of 'NO Machine Failures'.
 
 
 ![systemRx_cm_r1](https://user-images.githubusercontent.com/100389581/169563095-9e29cab3-ae94-45e1-b1d6-af48d193a9a3.png)
