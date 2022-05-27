@@ -58,24 +58,25 @@ The machine failure consists of **_five_** independent failure modes:
 
 
 This heatmap highlights the following:
->1.  HDF, OSF and PWF independent failures (scores .58, .53, .52, respectively) are strongly correlated with Machine Failure.
->2.  Rotational Temperature and Air Temperature have a strong postive correlation with .88 scores
->3.  Rotational Speed and Torque have a strong negative correlation with a -.88 score
+>1.  HDF, OSF and PWF independent failures (scores .46, .41, .41, respectively) are strongly correlated with Machine Failure.
+>2.  Rotational Temperature and Air Temperature have a strong postive correlation with .86 scores
+>3.  Rotational Speed and Torque have a strong negative correlation with a -.84 score
 
-![systemRx_heatmap](https://user-images.githubusercontent.com/100389581/168302971-ec15d067-80a6-4e21-83e6-64c0a7a4145c.png)
+![sysRx_ups_hmap](https://user-images.githubusercontent.com/100389581/170729749-3fc535d2-bef2-490c-b251-52354754e76b.png)
 
 
 This barplot shows Type independent failure totals (by percent) and clearly graphs the TOP 3 categories:
->1. HDF which precede ~33% of machine failures (1)
+>1. HDF which precede ~34% of machine failures (1)
 >2. OSF which precede ~28% of machine failures
 >3. PWF which precede ~26% of machine failures
 
-![systemRx_TypeMF](https://user-images.githubusercontent.com/100389581/168302674-5a3aa8a7-b4cd-463b-9840-2967474d483a.png)
+![typemf_ups](https://user-images.githubusercontent.com/100389581/170729932-ae80fe83-bfe3-4d34-b24b-a8ab852e45bf.png)
 
 
 This scatterplot shows the highest operational occurrence for heat dissipation failure (HDF) that lead to machine failures:
 
-![systemRx_HDF](https://user-images.githubusercontent.com/100389581/168303099-b6e8c580-30e3-4572-8d20-7ef5fc76bcf0.png)
+![hdf_ups](https://user-images.githubusercontent.com/100389581/170729973-58697a4f-a781-4b70-861d-cd6fbc76d92e.png)
+
 
 
 
@@ -84,10 +85,11 @@ This scatterplot shows the highest operational occurrence for heat dissipation f
 ---
 ## Summary:
 
-To maintain the integrity of the training and test model predictions, the five independent failure modes were dropped from the dataset during the train-test split.  This ensured one target, machine failure, was the focus of this analysis.  Overall, the XGBClassifier model performed decently as evidenced by its classification report heatmap below which indicates 80% precision and an average of 65% recall.  Translation: basically 0 (.049%) false positives and 35% false negatives for this model. Accuracy is 99%, very high and expected, since the data is unbalanced and in favor of 'NO Machine Failures'.
+To maintain the integrity of the training and test model predictions, the five independent failure modes were dropped from the dataset during the train-test split.  This ensured one target, machine failure, was the focus of this analysis.  Overall, the XGBClassifier model performed quit well as evidenced by its classification report heatmap below which indicates 94% precision and an average of 96% recall.  Translation: basically (6.2%) false positives and 3.5% false negatives for this model. Accuracy is 95%, and I have a higher confidence in the model's performance after correcting the dataset imbalance by upsampling.
 
 
-![systemRx_cm_r1](https://user-images.githubusercontent.com/100389581/169563095-9e29cab3-ae94-45e1-b1d6-af48d193a9a3.png)
+![XGBC_ups_cm](https://user-images.githubusercontent.com/100389581/170731090-6407e622-7f64-48dc-af37-add7e8d3c19d.png)
+
 
 
 
