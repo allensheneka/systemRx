@@ -67,8 +67,8 @@ This heatmap highlights the following:
 
 This barplot shows Type independent failure totals (by percent) and clearly graphs the TOP 3 categories:
 >1. HDF which precede ~34% of machine failures (1)
->2. OSF which precede ~28% of machine failures
->3. PWF which precede ~26% of machine failures
+>2. OSF which precede ~28.49% of machine failures
+>3. PWF which precede ~28.38% of machine failures
 
 ![typemf_ups](https://user-images.githubusercontent.com/100389581/170729932-ae80fe83-bfe3-4d34-b24b-a8ab852e45bf.png)
 
